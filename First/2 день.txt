@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huite</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="img/dust.jpg"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Домой</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li class="btn"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Тарелочки</h2>
+                <h1>Тарелочки по самой низкой цене</h1>
+                <p>Хрустальные тарелочки — сияние вашего стола! Идеальная глубина, изящные грани. Для праздников и будней. Прочные, стильные, многофункциональные. Подчеркнут вкус блюд и ваш статус. Удивите гостей! Подарите себе и близким роскошь каждодневного общения. Скидка 30% на первый набор! Успейте купить — предложение ограничено.</p>
+                <button class="butt">Узнать больше</button>
+            </div>
+            <img src="img/main.jpg" alt="Тарелочки">
+        </div>
+    </div>
+</body>
+</html>
+
+//////////////////////
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+/*шапка*/
+.wrapper{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 157, 166, 1) 100%);
+    width: 100%;
+    min-height: 100vh; 
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+header nav{
+    width: 40%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li.active::after{
+    content: '';
+    display : block;
+    width: 30px;
+    height: 5px;
+    background: #991515;
+    border-radius: 10px;
+}
+
+header nav ul li a{
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.butt) a:hover{
+    border-bottom: 5px solid #1a2b8c;
+}
+
+header nav ul li.butt a{
+    background: #991515;
+    padding: 9px 19px;
+    transition: all 500ms ease;
+    border-radius: 5px; 
+}
+
+header nav ul li.butt a:hover{
+    background: #A65050;
+}
+ /*секция презентации*/
+
+.hero{
+    padding-bottom: 100px;
+}
+
+.hero--info{
+    width: 530px;
+    padding-top: 90px;
+}
+
+.hero--info h2{
+    color:#991515;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero--info h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hero--info p{
+    font-weight: 500;
+    line-height: 140%;
+    margin: 30px;
+}
+
+.hero--info .butt{
+    background: #1a2b8c;
+    color: #A65050;
+    border-radius: 40px;
+    padding: 15px 30px;
+    border: 0;
+    transition:all 500ms ease;
+}
+
+.hero--info .butt:hover{
+    cursor: pointer;
+    transform: scale(1.9);
+}
