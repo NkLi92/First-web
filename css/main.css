@@ -260,27 +260,28 @@ header nav ul li.butt a:hover{
 .features .info{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .features .block {
     display: flex;
-    align-items: center; /* Выравнивание по вертикали */
-    gap: 30px; /* Расстояние между изображением и текстом */
+    align-items: center; 
+    gap: 30px; 
     margin: 30px 0;
     padding: 20px;
 }
 
 .features .block img {
-    width: 300px; /* Настройте размер */
+    width: 300px; 
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    flex-shrink: 0; /* Чтобы изображение не сжималось */
+    flex-shrink: 0; 
 }
 
 .features .text-content {
-    flex: 1; /* Текст занимает всё оставшееся пространство */
+    flex: 1; 
 }
 
 .features .text-content p {
