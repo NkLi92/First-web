@@ -22,6 +22,30 @@ img{
 
 /*дисклеймер*/
 
+.discleimer {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.discleimer h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    background: #991515;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
 .discleimer h1{
     text-transform: uppercase;
     font-size: 32px;
@@ -237,7 +261,7 @@ header nav ul li.butt a:hover{
 }
 
 .features{
-    background: url('/img/задник под иконки.jpg') no-repeat center center fixed;
+    background: url('/img/i.webp') no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
@@ -291,6 +315,20 @@ header nav ul li.butt a:hover{
 
 /*Мои будущие проэкты*/
 
+.projects h3{
+    font-style: 30px;
+    text-align: center;
+}
+
+.projects p{
+    margin: 40px 0;
+    text-align: center;
+}
+.projects{
+    padding: 100px 0;
+
+}
+
 .projects .images {
     display: flex;
     justify-content: center;
@@ -304,5 +342,31 @@ header nav ul li.butt a:hover{
     object-fit: cover;
     border-radius: 10px;
 }
+
+.projects .see-all{
+    color: #fff;
+    background: #A65050;
+    border-radius: 6px;
+    padding: 12px 23px;
+    float: none;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.projects .see-all{
+    transform: scale(1.2);
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*.projects h3 ,
+.projects p{
+
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
 
 
