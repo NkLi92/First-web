@@ -111,7 +111,8 @@ header nav ul li:not(.active):not(.butt) a:hover{
     border-bottom: 5px solid #1a2b8c;
 }
 
-header nav ul li.btn a{
+header nav ul li.btn a , 
+.email .block button:hover{
     background: #991515;
     padding: 9px 19px;
     transition: all 200ms ease;
@@ -369,4 +370,78 @@ header nav ul li.butt a:hover{
     margin-right: auto;
 }*/
 
+/*Нижняя часть с вводом имейла*/
 
+/* Нижняя часть с вводом имейла */
+.email{
+    padding: 80px 0 120px 0; /* Добавьте отступы сверху и снизу */
+}
+
+.email h3{
+    font-size: 30px;
+    margin-top: 0; 
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+
+.email .block{
+    background: #A9A9A9;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    align-items: center; /* ← Это выравнивает по вертикали */
+    max-width: 100%; 
+    box-sizing: border-box;
+    justify-content: space-between; 
+}
+
+.email .block .input-group {
+    display: flex;
+    align-items: center; /* ← Выравнивает инпут и кнопку по вертикали */
+    gap: 10px; /* ← Расстояние между инпутом и кнопкой */
+}
+
+.email .block h4{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0; 
+}
+
+.email .block p{
+    width: 500px;
+    margin: 10px; 
+}
+
+.email .block input{
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    width: 380px;
+    padding: 20px 30px;
+    height: 20px; 
+    position: relative;
+    right: -120px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email .block button{
+    cursor: pointer;
+    border: none;
+    padding: 20px 30px; 
+    background: #991515;
+    color: white;
+    border-radius: 4px;
+    height: 60px; 
+    box-sizing: border-box;
+    transition: all 200ms ease;
+    position: relative;
+    z-index: 2;
+}
+
+.email .block button:hover{
+    background: #A65050;
+}
