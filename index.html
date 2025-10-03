@@ -102,21 +102,21 @@
     <div class="features">
         <div class="container">
             <h3>
-                    Бла бла блаблаблаблаблабла3
+                    Хит сезона!!!!
             </h3>
             <p>
-                Бла бла блаблаблаблабла П
+                Лето 2007
             </p>
             <div class="block">
                 <img src="img/история.jfif" alt="">
                 <p>
-                    ИсторияИсторияИсторияИсторияИсторияИсторияИсторияИстория
+                    Почему стакан пошёл учиться? Хотел получить высшее образование!
                 </p>
             </div>
             <div class="block">
                 <img src="img/история.jfif" alt="">
                 <p>
-                    ИсторияИсторияИсторияИсторияИсторияИсторияИсторияИстория
+                    Что сказал один стакан другому? "Ты меня напрягаешь!"
                 </p>
             </div>
         </div>
@@ -152,8 +152,8 @@
                         текст
                     </p>
                     <div>
-                        <input type="email" placeholder="По братски">
-                        <button>
+                        <input type="email" id="emailField" placeholder="По братски">
+                        <button onclick="CheckEmail()">
                             Продолжить
                         </button>
                     </div>
@@ -161,5 +161,49 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">Чашечка</span>
+                <p>Чайная чашка в космосе не позволит напитку вылиться...</p>
+            </div>
+            <div>
+                <h4>О нас</h4>
+                <ul>
+                    <li>Город Севастополь</li>
+                    <li>Улица:не помню</li>
+                    <li>Дом:27</li>
+                    <li>Настроение:Нормально</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Наши Контакты</h4>
+                <p>https://discord.gg/kjt9Cebe</p>
+                <p>+79786644878</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <p>2025 Все права защищены. Если найдёте их — верните, пожалуйста!</p>
+        </div>
+    </footer>
+
+    <script>
+        function CheckEmail(){
+            let email = document.querySelector('#emailField').value;
+                /*alert(email.value)*/
+                if(!email.includes('@')){
+                    alert('Нет символа @');
+                }
+                else if(!email.includes('.')){
+                    alert('Нет символа .');
+                }
+                else{
+                    alert('Все НОРМ');
+                }
+        }
+        
+    </script>
 </body>
 </html>
