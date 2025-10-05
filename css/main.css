@@ -10,6 +10,7 @@ body{
     font-weight: 400;
     color: black;
     font-size: 20px;
+    background-color: #1f629e;
 }
 
 a {
@@ -58,6 +59,7 @@ img{
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 157, 166, 1) 100%);
     width: 100%;
     min-height: 100vh; 
+    overflow-x: hidden;
 }
 
 .container{
@@ -153,7 +155,7 @@ header nav ul li.butt a:hover{
     margin: 30px;
 }
 
-.hero--info .butt{
+.hero--info .butt , .hero-about .info .btn{
     background: #1a2b8c;
     color: #A65050;
     border-radius: 40px;
@@ -163,7 +165,7 @@ header nav ul li.butt a:hover{
     font-size: 15px;
 }
 
-.hero--info .butt:hover{
+.hero--info .butt:hover ,.hero-about .info .btn:hover{
     cursor: pointer;
     transform: scale(1.9);
 }
@@ -496,4 +498,158 @@ footer > .container > p {
     margin-top: 30px;
     padding-top: 20px;
     border-top: 1px solid #333;
+}
+
+/*СТАРНИЦА О НАС*/
+
+.hero-about{
+    position: relative;
+}
+
+.hero-about img{
+    position: absolute;
+    right: 100px;
+    top: 230px;
+    transform: scale(2.5);
+}
+
+.hero-about .info{
+    width: 500px;
+    padding: 100px 0;
+}
+
+.hero-about .info h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info .btn{
+    margin-top: 20px;
+}
+
+/*Блок Ворк*/
+
+.work{
+    padding: 80px;
+
+}
+
+.work h2{
+    font-style: 90px;
+    margin-bottom: 30px;
+}
+
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block{
+    border-radius: 10px;
+    width: 25%;
+    padding: 50px 35px;
+    background: #965024;
+}
+
+.work .blocks .block h3{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.work .blocks .block .badge{
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.work .blocks .block .badge .green{
+    background: green;
+}
+.work .blocks .block .badge .orange{
+    background: orange;
+}
+.work .blocks .block .badge .purple{
+    background: purple;
+}
+
+/*страница контакты */
+
+.hero-contacts h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.hero-contacts p{
+    text-align: center;
+}
+.hero-contacts img{
+    width: 70%;
+    margin: 100px 200px;
+}
+
+.feedback{
+    padding: 70px;
+    background-color: #dc7474;
+}
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.feedback .inline {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback .inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback .inline > div {
+    width: 48%; 
+}
+
+.feedback label {
+    color: #fff; 
+    font-size: 14px;
+    display: block; 
+}
+
+.feedback input,
+.feedback textarea {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #cecece;
+    display: block;
+    width: 100%; 
+    padding: 15px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.feedback form button{
+    background: #1a2b8c;
+    border-radius: 7px;
+    border:none;
+    float: right;
+    cursor: pointer;
+    color: #ddd;
+    padding: auto;
+    transition: all 500ms ease;
+}
+
+.feedback form button:hover{
+    background: #991515;
 }
