@@ -713,3 +713,33 @@ footer > .container > p {
     scroll-snap-align: start;
     border-radius: 10px;
 }
+
+/* Аниация кнопки*/
+.buy-btn {
+    background: #991515;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.buy-btn:hover {
+    background: #A65050;
+    transform: translateY(-2px);
+}
+
+.buy-btn.bought {
+    background: #808080 !important;
+    color: #ccc !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.buy-btn.bought:hover {
+    background: #808080 !important;
+    transform: none;
+}
