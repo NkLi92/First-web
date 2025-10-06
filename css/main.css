@@ -653,3 +653,63 @@ footer > .container > p {
 .feedback form button:hover{
     background: #991515;
 }
+
+/*портфолио*/
+
+.tovar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tovar-item {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tovar-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #991515;
+    display: block;
+    margin: 15px 0;
+}
+
+.buy-btn {
+    background: #991515;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/*Анимация скролла*/
+.image-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.image-scroll img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: 10px;
+}
