@@ -743,3 +743,24 @@ footer > .container > p {
     background: #808080 !important;
     transform: none;
 }
+
+/*новости*/
+.novosty .nowdna{
+    text-align: center;
+}
+
+.novosty .nowdna h1{
+    font-size: 40px;
+}
+
+.novosty .nowdna p{
+    font-size: 30px;
+}
+
+.novosty .anekdoty .anek{
+    padding-top: 10px;
+    margin: 20px 8px;
+}
+
+
+
